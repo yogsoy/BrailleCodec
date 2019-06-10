@@ -13,7 +13,7 @@
 # along with this program.  If not, see https://github.com/LuciaSoftware/lucia/blob/master/LICENSE.
 
 braille_codec_table = {
-# special chers
+# special chars
 " ": "00000000",
 ",": "01000000",
 ".": "01001100",
@@ -108,7 +108,7 @@ def encode(instring):
 	return out
 
 if __name__ == "__main__":
-	test = "Hello World 123"
+	test = "Hello World 123! Is this 100% working?"
 	print(f"string: {test}")
 	encoder_result = encode(test)
 	print(encoder_result)

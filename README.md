@@ -1,21 +1,21 @@
 ﻿# BrailleCodec
-A 8-braille encoder and decoder.
+An 8-dot braille encoder and decoder.
 
 
-### What is Braille:
+### What is Braille?
 Braille is a reading and writing language for the blind and visually impaired, that consist of 6 or 8 dots in a 2 column cell named the braille cell.
 todo: inset image of 6 and 8 dots braille cells here.
 
-Braille cells dot are gived the numbers from 1 to 8.
+Braille cells dot are gived the numbers from 0 to 7.
 
 
-### How does this encoder and decoder work
-This encoder / decoder works by mapping each character to an 8 numbered pin number, each number representing a dot on the braille cell. The number consist, like binary code, by ones and zeros. "1" represent a raised dot on the braille cell and "0" represent a dot that's lowered / not raised.
+### How does this encoder and decoder work?
+This encoder / decoder works by mapping each character to an 8 numbered pin number, each number representing a dot on the braille cell. The number consist, like binary code, by ones and zeros. "1" represents a raised dot on the braille cell and "0" represents a dot that's lowered / not raised.
 
 #### An example
 The letter "a" is written in braille by having dot 1 raised and all other dots lowered.
 In this BrailleCodec, the letter "a" is represented by the pin "10000000".
-Another example is the uppercase "A" is basicly the same as above but with dot 7 raised "10000010".
+Another example is the uppercase "A" is basically the same as above but with dot 7 raised "10000010".
 
 ### Code example:
 This example is written in python 3.
@@ -32,8 +32,11 @@ braillecodec.decode("11001010100010001110000011100000101010000000000001011110101
 
 Look in the example.py file for a bigger example.
 
+### Converter
+The converter.py file will quite simply convert whatever input through the Braille Codec.
+Run it with python3, and enter input in the console. Output will be returned without spaces in 8-dot format (i.e. 00000000 - 11111111)
 
-### installation
+### Installation
 To install put the braillecodec file for your selected language in your project structure and import it live above.
 
 ### Contributing
